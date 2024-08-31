@@ -2,10 +2,10 @@ import asyncio
 import edge_tts
 
 VOICES = {
-    '1': 'kk-KZ-AigulNeural',  # Казахский голос
-    '2': 'en-US-GuyNeural',    # Английский голос
-    '3': 'en-US-JennyNeural',  # Английский голос
-    '4': 'ru-RU-DmitryNeural'  # Русский голос
+    '1': 'kk-KZ-AigulNeural', 
+    '2': 'en-US-GuyNeural',    
+    '3': 'en-US-JennyNeural',  
+    '4': 'ru-RU-DmitryNeural'  
 }
 
 def list_voices():
@@ -24,7 +24,6 @@ async def text_to_speech(text, voice, output_file):
         return None
 
 def main():
-    # Вывод списка доступных голосов и выбор пользователя
     list_voices()
     voice_choice = input("Выберите голос (введите номер): ")
  #дефолт язык казахский
